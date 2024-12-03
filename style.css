@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.pass-gen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: lightskyblue;
+}
+.pass-gen-wrapper{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.password-display{
+    display: flex;
+    margin-bottom: 10px;
+}
+#password-output{
+    flex-grow: 1;
+    background-color: rgb(232, 228, 228);
+    padding: 10px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 20px;
+}
+.copy-btn{
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(6, 111, 248);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.copy-btn:hover{
+    background-color: rgb(6, 101, 226);
+}
+.range-wrapper{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.password-range{
+    text-align: center;
+}
+.password-range>label{
+    display: block;
+    margin-bottom: 10px;
+}
+.range-select{
+    cursor: pointer;
+    width: 80%;
+}
+output{
+    width: 10%;
+}
+.password-types{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.password-types>div{
+    background-color: rgb(232, 228, 228);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.generate-btn{
+    font-size: 18px;
+    padding: 7px 20px;
+    background-color: rgb(6, 111, 248);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.generate-btn:hover{
+    background-color: rgb(6, 101, 226);
+}
+
+@media(max-width:422px){
+    .password-types{
+        grid-template-columns: 1fr;
+    }
+}
